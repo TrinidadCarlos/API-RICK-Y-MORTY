@@ -72,10 +72,38 @@ a{
 	height:19rem;
 	background-image: url('../img/spinner.png');
 	background-size: cover;
-	animation: spinn;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
+	animation: spinn  2s infinite linear;
 }
+.spinner-texto{
+	color:var(--verde-1);
+	font-weight: bold;
+	margin-top:3rem;
+	text-transform: capitalize;
+}
+
+.spinner-peticion{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+	text-align: center;
+}
+.spinner-animacion-peticion{
+	width:10rem;
+	height:10rem;
+	border: 1rem dotted var(--oscuro-1);
+	border-right-color:var(--verde-1);
+	border-radius: 50%;
+	background-size: cover;
+	animation: spinn  1.5s infinite linear;
+}
+.spinner-texto-peticion{
+	color:var(--oscuro-1);
+	font-weight: bold;
+	margin-top:3rem;
+	text-transform: capitalize;
+}
+
 @keyframes spinn{
 	0%{
 		transform: rotate(0deg);
@@ -84,12 +112,7 @@ a{
 		transform: rotate(360deg);
 	}
 }
-.spinner-texto{
-	color:var(--verde-1);
-	font-weight: bold;
-	margin-top:3rem;
-	text-transform: capitalize;
-}
+
 
 
 
@@ -290,7 +313,7 @@ a{
 }
 
 .card{
-	padding: 1rem 0;
+	padding:1rem;
 	border: .5rem solid var(--verde-1);
 	background-color: var(--oscuro-1);
 	color: var(--verde-1);
@@ -328,7 +351,6 @@ a{
 
 /* -------PAGINADOR */
 .contenedor-paginas{
-	border: .1rem solid var(--oscuro-1);
 	overflow-x: auto;
 	margin-top: 3rem;
 	padding:1rem 0 ;

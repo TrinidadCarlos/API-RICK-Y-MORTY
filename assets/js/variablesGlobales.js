@@ -3,6 +3,7 @@ const personaje = document.querySelector('#personaje');
 const categoria = document.querySelector('#categoria');
 const vaciarCampos = document.querySelector('#vaciarCampos');
 const contenedorṔaginador = document.querySelector('#contenedorPaginas');
+const spinnerPeticiones = document.querySelector('#spinnerPeticiones');
 const paginador = document.querySelector('#paginador');
 
 
@@ -17,6 +18,7 @@ export {
     personaje,
     categoria,
     vaciarCampos,
+    spinnerPeticiones,
     contenedorṔaginador,
     paginador,
     contenedorCards,
