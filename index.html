@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick y Morty</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="preload" href="./assets/css/normalize.css" as="style">
+    <link rel="preload" href="./assets/css/main.css" as="style">
+    <link rel="preload" href="./assets/js/main.js" as="script">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- EL SPINNER DE LA CARGA -->
+    <div class="spinner">
+        <p class="spinner-animacion"> </p>
+        <p class="spinner-texto">Regresando al universo C-137...</p>
+    </div>
+
+    <!-- EL HEADER DE LA PÁGINA -->
+
+    <header class="header">
+        <div class="container">
+            <nav class="navegacion">
+                <img src="./assets/img/logoRyM.png" alt="Logo de Rick Y Morty" class="navegacion-logo">
+            </nav>
+            <div class="banner ">
+                <h1 class="banner-titulo">Conoce más de esta epica caricatura, sus personaje y creadores</h1>
+                <p class="banner-texto">
+                    Por un lado se muestran las aventuras que vive un abuelo extremadamente egoísta y alcohólico por lo
+                    vasto y desconocido del espacio intergaláctico o interdimensional, el cual arrastra a su nieto para
+                    que viaje con él. Estas aventuras se intercalan en cada episodio con dramas domésticos familiares
+                    más propios del género sitcom.
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- ACERCA DE LA SERIE ANIMADA -->
+        <section class="bloque container">
+            <h2 class="bloque-titulo">Acerca de la serie</h2>
+            <p class="bloque-texto">
+                Rick y Morty (en inglés: Rick and Morty) es una serie de televisión estadounidense de animación para
+                adultos
+                creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim. La serie sigue las desventuras de un
+                científico, Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida
+                doméstica y los viajes espaciales, temporales e intergalácticos. Roiland es el encargado de darle voz a
+                los
+                dos personajes principales1​2​, y la serie también incluye las voces de Chris Parnell, Spencer Grammer y
+                Sarah Chalke.
+            </p>
+            <p class="bloque-texto">
+                Los orígenes de la serie pueden encontrarse en un cortometraje rudimentario animado por Roiland para el
+                festival de cine Channel 101 llamado Doc and Mharti, una parodia de los principales protagonistas de
+                Back to
+                the Future. Cuando la cadena NBC despidió a Harmon en 2013 por discusiones entre él y los ejecutivos de
+                la
+                serie que había creado, Community, él y Roiland desarrollaron una serie basada en los personajes ya
+                creados
+                por Roiland.3​
+            </p>
+            <cite class="bloque-fuente"><a href="https://es.wikipedia.org/wiki/Rick_y_Morty" class="fuente"> Fuente:
+                    Wikipedia</a></cite>
+        </section>
+
+        <!-- LOS AUTORES -->
+        <section class="bloque container">
+            <h2 class="bloque-titulo">Los autores</h2>
+            <div class=" autores container">
+                <div class="autor">
+                    <h3 class="autor-nombre"> Mark Justin Roiland </h3>
+                    <div class="autor-contenedor-imagen">
+                        <img src="./assets/img/justin.jpeg" alt="Fotogradia del autor: Mark Justin "
+                            class="autor-imagen">
+                    </div>
+                    <p class="bloque-texto">
+                        <a href="https://es.wikipedia.org/wiki/Justin_Roiland" class="fuente-autor">Mark Justin
+                            Roiland</a> (21 de febrero de 1980) es un actor, escritor, director y productor
+                        estadounidense.
+                        Junto con Dan Harmon es creador y productor ejecutivo de la serie de animación Rick & Morty para
+                        Adult Swim. También es conocido por hacer la voz de Limoncio en Hora de Aventura, Blendin
+                        Benjamin
+                        Blandin en Gravity Falls y Oscar en Pecezuelos.
+                    </p>
+                </div>
+
+                <div class="autor">
+                    <h3 class="autor-nombre"> Daniel "Dan" Harmon</h3>
+                    <div class="autor-contenedor-imagen">
+                        <img src="./assets/img/dan.jpeg" alt="Fotogradia del autor: Daniel Harmon" class="autor-imagen">
+                    </div>
+                    <p class="bloque-texto">
+                        <a href="https://es.wikipedia.org/wiki/Dan_Harmon" class="fuente-autor">Daniel "Dan" Harmon</a>
+                        (Milwaukee, 3 de enero de 1973) es un guionista y animador estadounidense.
+                        Reconocido por crear y producir la serie cómica Community de la cadena NBC. Además, co-creó la
+                        serie
+                        animada de Adult Swim Rick and Morty, y co-fundó el sitio web de televisión Channel 101. Harmon
+                        publicó el libro You'll Be Perfect When You're Dead en 2013.1​2​
+                        También es anfitrión de un pódcast epónimo semanal, Harmontown.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION EN LA QUE SE MUESTRAN ALGUNOS PERSONAJES -->
+        <section class="bloque container">
+            <h2 class="bloque-titulo">Algunos personajes</h2>
+
+            <form class="formulario" id="formulario">
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="personaje" class="campo-label">Busca a tu personaje favorito</label>
+                        <input type="text" name="personaje" id="personaje" class="campo-input">
+                    </div>
+
+                    <div class="campo">
+                        <label for="personaje" class="campo-label">O elije una categoría</label>
+
+                        <select name="categoria" id="categoria" class="campo-input select">
+                            <option value="null" selected disabled>Elige una categoría</option>
+                            <option value="character">Personajes</option>
+                            <option value="location">Ubicaciones</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="botones">
+                    <input type="submit" value="Ver selección" class="submit">
+                    <input type="reset" value="Vaciar campos" class="reset" id="vaciarCampos">
+                </div>
+            </form>
+
+
+            <!-- PERSONAJES CARD -->
+
+            <div class="contenedor-cards" id="contenedorCards">
+
+                <!-- TEMPLATE PARA PERSONAJES Y PERSONAJE ESPECIFICO -->
+                <template id="templateCardPersonajes">
+                    <div class="card" id="card">
+                        <h3 class="card-titulo" id="cardTitulo"></h3>
+                        <p class="card-detalle">Genero:
+                            <span class="card-detalle-span" id="genero">male</span>
+                        </p>
+
+                        <div class="contenedor-card-imagen">
+                            <img src="" alt="" class="card-imagen" id="imagen">
+                        </div>
+
+                        <p class="card-detalle">Origen :
+                            <span class="card-detalle-span" id="origen"></span>
+                        </p>
+
+                        <p class="card-detalle">Locacion :
+                            <span class="card-detalle-span" id="locacion"></span>
+                        </p>
+
+                        <p class="card-detalle">Estatus:
+                            <span class="card-detalle-span" id=estatus></span>
+                        </p>
+
+                        <p class="card-detalle">Especie :
+                            <span class="card-detalle-span" id="especie"></span>
+                        </p>
+
+                        <ul class="card-episodios" id="episodios">
+
+                        </ul>
+
+                    </div>
+                </template>
+
+
+
+
+                <!-- TEMPLATE PARA UBICACIONES -->
+
+                <template id="templateCardUbicaciones">
+                    <div class="card" id="cardUbicacion">
+                        <h3 class="card-titulo" id="cardTituloUbicacion"></h3>
+
+                        <p class="card-detalle">Tipo:
+                            <span class="card-detalle-span" id="ubicacionTipo"></span>
+                        </p>
+
+                        <p class="card-detalle">dimension:
+                            <span class="card-detalle-span" id="ubicacionDimension"></span>
+                        </p>
+                    </div>
+
+                </template>
+            </div>
+            
+            <div class="contenedor-paginas container d-none" id="contenedorPaginas">
+                <ul class="lista-paginas" id="paginador">
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="contenedor-imagen-footer">
+                <img src="./assets/img/logoRyM.png" alt="Logo de Rick y Morty" class="imagen-footer">
+            </div>
+            <a href="https://rickandmortyapi.com/documentation/" class="enlace-api"> Visita la API</a>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/main.js" type="module"></script>
+</body>
+
+</html>
