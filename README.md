@@ -5,3 +5,6 @@ requiere con mismo datos que se extraen de url's anteriores... API otroga pagina
 ...
 Responsive, HTML, CSS(grid, flexbox, keyframe para spinner), JS (import, export, fetch) 
 
+//
+MUESTRA DEL SITIO
+https://rick-y-morty-api.netlify.app/
